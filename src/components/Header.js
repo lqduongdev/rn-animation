@@ -13,7 +13,7 @@ import BackArrowSvg from '../assets/svg/BackArrowSvg';
 
 const Header = ({ style, title, titleStyle, navigation, right, isLeft = true, optionCall, left, isDisabledPress = false, isColor = true }) => {
 
-  return <View style={[styles.container, { backgroundColor: isColor ? Colors.eastBay : 'transparent' }, style]}>
+  return <View style={[styles.container, { backgroundColor: isColor ? Colors.accent.general : 'transparent' }, style]}>
     <TouchableOpacity
       hitSlop={{ top: 10, left: 15, bottom: 10, right: 15 }}
       disabled={!(isLeft && !isDisabledPress)}
@@ -30,7 +30,7 @@ const Header = ({ style, title, titleStyle, navigation, right, isLeft = true, op
       {
         left ? left : <BackArrowSvg
           size={wScale(25)}
-          color={isColor ? '#fff' : Colors.eastBay}
+          color={isColor ? '#fff' : Colors.accent.general}
         />
       }
     </TouchableOpacity>
@@ -38,7 +38,7 @@ const Header = ({ style, title, titleStyle, navigation, right, isLeft = true, op
     <View style={styles.containerTitle}>
       <Text
         numberOfLines={2}
-        style={[styles.title, { color: isColor ? '#fff' : Colors.eastBay }, titleStyle]}>
+        style={[styles.title, { color: isColor ? '#fff' : Colors.accent.general }, titleStyle]}>
         {title}
       </Text>
     </View>

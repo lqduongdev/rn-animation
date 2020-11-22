@@ -2,8 +2,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { navigationRef } from './refNavigation';
-import { SCREEN_WIDTH } from '../style/Dimensions';
 import Home from '../modules/home/view/Home';
+import Login1 from '../modules/login1/view/Login1';
 
 const Stack = createStackNavigator();
 
@@ -26,15 +26,20 @@ export default function RootNavigation () {
       <Stack.Navigator
         headerMode={'none'}
         screenOptions={{
-          gestureResponseDistance: {
-            horizontal: SCREEN_WIDTH * 0.8,
-          },
+          // gestureResponseDistance: {
+          //   horizontal: SCREEN_WIDTH * 0.8,
+          // },
           transitionSpec: {
             open: config,
             close: config,
           },
         }}>
         <Stack.Screen name="Home" component={Home}/>
+
+
+        <Stack.Screen name="Login1" component={Login1}/>
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );
