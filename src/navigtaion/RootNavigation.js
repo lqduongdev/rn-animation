@@ -29,10 +29,6 @@ export default function RootNavigation () {
           // gestureResponseDistance: {
           //   horizontal: SCREEN_WIDTH * 0.8,
           // },
-          transitionSpec: {
-            open: config,
-            close: config,
-          },
         }}>
         <Stack.Screen name="Home" component={Home}/>
 

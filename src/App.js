@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { StatusBar, View } from 'react-native';
+import { View } from 'react-native';
 
 import { enableScreens } from 'react-native-screens';
 import RootNavigation from './navigtaion/RootNavigation';
@@ -19,7 +19,6 @@ class App extends React.PureComponent {
   render () {
     return (
       <View style={{ flex: 1, backgroundColor: '#fff' }}>
-        <StatusBar barStyle={'dark-content'}/>
         <RootNavigation/>
       </View>
     );

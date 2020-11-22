@@ -27,6 +27,14 @@ class Login1 extends PureComponent {
     super(props, context);
 
     this.scrollX = new Animated.Value(0);
+
+    this.MAGIC = Animated.modulo(
+      Animated.divide(
+        Animated.modulo(this.scrollX, SCREEN_WIDTH),
+        new Animated.Value(SCREEN_WIDTH),
+      ),
+      1,
+    );
   }
 
   _renderItem = ({ item }) => (
@@ -81,20 +89,11 @@ class Login1 extends PureComponent {
   };
 
   _renderSquare = () => {
-
-    const MAGIC = Animated.modulo(
-      Animated.divide(
-        Animated.modulo(this.scrollX, SCREEN_WIDTH),
-        new Animated.Value(SCREEN_WIDTH),
-      ),
-      1,
-    );
-
-    const rotate = MAGIC.interpolate({
+    const rotate = this.MAGIC.interpolate({
       inputRange: [0, 0.5, 1],
       outputRange: ['35deg', '0deg', '35deg'],
     });
-    const translateX = MAGIC.interpolate({
+    const translateX = this.MAGIC.interpolate({
       inputRange: [0, 0.5, 1],
       outputRange: [0, -SCREEN_HEIGHT, 0],
     });
@@ -122,7 +121,6 @@ class Login1 extends PureComponent {
         {this._renderBackDrop()}
 
         {this._renderSquare()}
-
 
         <Animated.FlatList
           contentContainerStyle={{ marginBottom: MARGIN_hScale * 2 }}
@@ -164,7 +162,6 @@ class Login1 extends PureComponent {
 
         </View>
         <Indicator scrollX={this.scrollX}/>
-
 
       </View>
     );
