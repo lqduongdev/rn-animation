@@ -115,6 +115,7 @@ class CardView1 extends PureComponent {
     }}>
       <Pressable onPress={() => {
         // this.props.navigation.navigate('CardView1Detail', { item });
+        this.props.navigation.goBack();
       }}>
         <SharedElement
           id={`item.${item.key}.image`}

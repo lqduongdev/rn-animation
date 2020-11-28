@@ -3,8 +3,8 @@ import React from 'react';
 import { navigationRef } from './refNavigation';
 import Home from '../modules/home/view/Home';
 import Login1 from '../modules/login1/view/Login1';
-import CardView1 from '../modules/CardView1/view/CardView1';
-import CardView1Detail from '../modules/CardView1/view/CardView1Detail';
+import CardView1 from '../modules/cardView1/view/CardView1';
+import CardView1Detail from '../modules/cardView1/view/CardView1Detail';
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 import { TransitionPresets } from '@react-navigation/stack';
 
