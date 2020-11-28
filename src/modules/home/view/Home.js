@@ -14,18 +14,23 @@ const listAnimation = [
   {
     key: 'login1',
     route: 'Login1',
-    title: 'Screen Login 1',
+    title: 'Login Screen 1',
+  },
+  {
+    key: 'cardView1',
+    route: 'CardView1',
+    title: 'Card View 1',
   },
 ];
 
 class Home extends PureComponent {
 
-  _renderItem = ({ item }) => (
+  _renderItem = ({ item, index }) => (
     <Pressable
       onPress={() => this.props.navigation.navigate(item.route)}
       style={styles.wrapper}>
       <Text style={styles.titleText}>
-        {'# ' + item.title}
+        {'#' + (index + 1) + ' ' + item.title}
       </Text>
     </Pressable>
   );

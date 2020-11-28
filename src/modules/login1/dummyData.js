@@ -24,7 +24,7 @@ const listAnimal = [
     descriptions: 'Crabs are generally covered with a thick exoskeleton, composed primarily of highly mineralized chitin,[4][5] and armed with a single pair of chelae (claws). Crabs are found in all of the world\'s oceans, while many crabs live in fresh water and on land, particularly in tropical regions. Crabs vary in size from the pea crab, a few millimeters wide, to the Japanese spider crab, with a leg span up to 4 m (13 ft)',
   },
   {
-    color: 'rgba(105, 55, 5,0.6)',
+    color: 'rgba(213, 87, 8,0.6)',
     Icon: <WhaleSvg size={wScale(200)}/>,
     title: 'Whales are a widely distributed and diverse group of fully aquatic placental marine mammals',
     descriptions: 'Whales, dolphins and porpoises belong to the order Cetartiodactyla, which consists of even-toed ungulates. Their closest living relatives are the hippopotamuses, having diverged about 40 million years ago. The two parvorders of whales, baleen whales (Mysticeti) and toothed whales (Odontoceti), are thought to have split apart around 34 million years ago.',
