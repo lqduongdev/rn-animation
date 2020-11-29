@@ -175,8 +175,6 @@ class CardView1 extends PureComponent {
         onHandlerStateChange={ev => {
           if (ev.nativeEvent.state === State.END && this.state.activeIndex !== arrayData.length - 1) {
             this._setCardActive(this.state.activeIndex + 1);
-            devLog('asdasd');
-
           }
         }}
       >

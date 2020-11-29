@@ -4,13 +4,18 @@
  */
 
 import React, { PureComponent } from 'react';
-import { FlatList, Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { FlatList, Pressable, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import Header from '../../../components/Header';
 import Colors from '../../../style/Colors';
 import Fonts from '../../../style/Fonts';
 import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions';
 
 const listAnimation = [
+  {
+    key: 'tabbar1',
+    route: 'Tabbar1',
+    title: 'Tab bar 1',
+  },
   {
     key: 'login1',
     route: 'Login1',
@@ -38,6 +43,7 @@ class Home extends PureComponent {
   render () {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle={'light-content'}/>
         <SafeAreaView style={{ backgroundColor: Colors.accent.general }}/>
         <Header title={'Free Time Animation'}
                 isColor={true}

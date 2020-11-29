@@ -47,7 +47,7 @@ const Colors = {
     light: '#FF8471',
     extraLight: '#FFE4E0',
   },
-  gey: {
+  grey: {
     general: '#E9E9E9',
     dark: '#CECECE',
     light: '#F6F7FA',
