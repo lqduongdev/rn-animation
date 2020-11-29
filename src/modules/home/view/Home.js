@@ -12,6 +12,11 @@ import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions';
 
 const listAnimation = [
   {
+    key: 'tabbar2',
+    route: 'Tabbar2',
+    title: 'Tab bar 2',
+  },
+  {
     key: 'tabbar1',
     route: 'Tabbar1',
     title: 'Tab bar 1',

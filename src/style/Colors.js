@@ -44,6 +44,7 @@ const Colors = {
   red: {
     general: '#FF6048',
     dark: '#D13017',
+
     light: '#FF8471',
     extraLight: '#FFE4E0',
   },
