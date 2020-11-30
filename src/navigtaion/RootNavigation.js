@@ -3,11 +3,11 @@ import React from 'react';
 import { navigationRef } from './refNavigation';
 import Home from '../modules/home/view/Home';
 import Login1 from '../modules/login1/view/Login1';
-import CardView1 from '../modules/cardView1/view/CardView1';
 import CardView1Detail from '../modules/cardView1/view/CardView1Detail';
 import { createStackNavigator } from '@react-navigation/stack';
 import TabbarStack from './stack/TabbarStack';
 import groupStack from './groupStack';
+import CardStack from './stack/CardStack';
 
 const Stack = createStackNavigator();
 
@@ -38,7 +38,6 @@ export default function RootNavigation () {
 
         <Stack.Screen name="Login1" component={Login1}/>
 
-        <Stack.Screen name="CardView1" component={CardView1}/>
 
         <Stack.Screen name="CardView1Detail"
                       component={CardView1Detail}
@@ -50,6 +49,8 @@ export default function RootNavigation () {
           //   ...TransitionPresets.ModalTransition,
           // }}
         />
+
+        {groupStack(Stack, CardStack)}
 
         {groupStack(Stack, TabbarStack)}
 

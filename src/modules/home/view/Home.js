@@ -12,6 +12,11 @@ import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions';
 
 const listAnimation = [
   {
+    key: 'cardView2',
+    route: 'CardView2',
+    title: 'Card View 2',
+  },
+  {
     key: 'tabbar2',
     route: 'Tabbar2',
     title: 'Tab bar 2',
@@ -40,7 +45,7 @@ class Home extends PureComponent {
       onPress={() => this.props.navigation.navigate(item.route)}
       style={styles.wrapper}>
       <Text style={styles.titleText}>
-        {'#' + (index + 1) + ' ' + item.title}
+        {'#' + (index + 1) + '. ' + item.title}
       </Text>
     </Pressable>
   );

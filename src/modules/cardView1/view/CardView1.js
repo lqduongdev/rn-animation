@@ -9,7 +9,7 @@ import Colors from '../../../style/Colors';
 import { SCREEN_WIDTH } from '../../../style/Dimensions';
 import { Directions, FlingGestureHandler, State } from 'react-native-gesture-handler';
 import { SharedElement } from 'react-navigation-shared-element';
-import DummyDataDateALive from '../../../assets/DummyData';
+import { DummyDataDateALive } from '../../../assets/DummyData';
 
 export const IMAGE_W = SCREEN_WIDTH / 1.4;
 export const IMAGE_H = IMAGE_W * 16 / 9;
