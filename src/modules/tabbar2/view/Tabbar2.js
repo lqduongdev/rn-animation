@@ -4,15 +4,15 @@
  */
 
 import React, { PureComponent } from 'react';
-import { Animated, Pressable, SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
-import { MARGIN_wScale, SCREEN_WIDTH, wScale } from '../../../style/Dimensions';
-import BackArrowSvg from '../../../assets/svg/BackArrowSvg';
+import { Animated, Pressable, SafeAreaView, StyleSheet, View } from 'react-native';
+import { SCREEN_WIDTH, wScale } from '../../../style/Dimensions';
 import Colors from '../../../style/Colors';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import ComponentStyles from '../../../style/ComponentStyles';
 import Circle from './Circle';
+import Header from '../../../components/Header';
 
 const SIZE_CIRCLE = wScale(70);
 const HEIGHT_TABBAR = SIZE_CIRCLE * 0.7;
@@ -33,13 +33,13 @@ class Tabbar2 extends PureComponent {
 
     Animated.parallel([
       Animated.timing(this.animateIcon, {
-        toValue: this.isShowIcon ? 1 : 0,
+        toValue: this.isShowIcon ? 0 : 1,
         duration: 300,
         delay: 100,
         useNativeDriver: true,
       }),
       Animated.timing(this.animate, {
-        toValue: this.isShowIcon ? 1 : 0,
+        toValue: this.isShowIcon ? 0 : 1,
         duration: 300,
         useNativeDriver: false,
       }),
@@ -152,17 +152,10 @@ class Tabbar2 extends PureComponent {
         flex: 1,
         backgroundColor: Colors.primary.white,
       }}>
-        <StatusBar barStyle={'dark-content'}/>
-        <SafeAreaView/>
-
-        <Pressable
-          style={{ marginHorizontal: MARGIN_wScale }}
-          onPress={() => this.props.navigation.goBack()}>
-          <BackArrowSvg
-            size={wScale(25)}
-            color={Colors.red.general}
-          />
-        </Pressable>
+        <SafeAreaView style={{ backgroundColor: Colors.accent.general }}/>
+        <Header title={'Tabbar 2'}
+                isColor={true}
+        />
 
         <View style={{ flex: 1 }}/>
 
