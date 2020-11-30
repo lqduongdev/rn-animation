@@ -88,6 +88,126 @@ const DummyDataDateALive = [
   },
 ];
 
+const DummyCardImage = [
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage1,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage2,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage3,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage4,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage5,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage6,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage7,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage8,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage9,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage10,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage11,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage12,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage13,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage14,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage15,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage16,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage17,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage18,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage19,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage21,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage22,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage23,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Origami Tobiichi',
+    source: Assets.image.cardImage.cardImage24,
+    color: 'rgba(169,173,179,0.5)',
+  },
+
+];
+
 export {
   DummyDataDateALive,
+  DummyCardImage
 };

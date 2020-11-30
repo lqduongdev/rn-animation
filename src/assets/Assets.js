@@ -29,7 +29,7 @@ const Assets = {
       cardImage2: require('./images/card_image/2.jpg'),
       cardImage3: require('./images/card_image/3.jpg'),
       cardImage4: require('./images/card_image/4.jpg'),
-      cardImage5: require('./images/card_image/4.jpg'),
+      cardImage5: require('./images/card_image/5.jpg'),
       cardImage6: require('./images/card_image/6.jpg'),
       cardImage7: require('./images/card_image/7.jpg'),
       cardImage8: require('./images/card_image/8.jpg'),
