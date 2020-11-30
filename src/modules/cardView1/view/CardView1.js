@@ -4,62 +4,16 @@
  */
 
 import React, { PureComponent } from 'react';
-import { Animated, FlatList, Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Animated, FlatList, Image, Pressable, StyleSheet, View } from 'react-native';
 import Colors from '../../../style/Colors';
-import { fontScale, MARGIN_hScale, MARGIN_wScale, SCREEN_WIDTH } from '../../../style/Dimensions';
-import Fonts from '../../../style/Fonts';
+import { SCREEN_WIDTH } from '../../../style/Dimensions';
 import { Directions, FlingGestureHandler, State } from 'react-native-gesture-handler';
 import { SharedElement } from 'react-navigation-shared-element';
+import DummyDataDateALive from '../../../assets/DummyData';
 
 export const IMAGE_W = SCREEN_WIDTH / 1.4;
 export const IMAGE_H = IMAGE_W * 16 / 9;
 const ITEM_VISIBLE = 5;
-
-const arrayData = [
-  {
-    key: 'Deep Ocean',
-    source: require('../images/deep_ocean.jpg'),
-    color: 'rgba(59,157,157,0.5)',
-  },
-
-  {
-    key: 'Sun Sets',
-    source: require('../images/sun_sets.jpg'),
-    color: 'rgba(134,59,148,0.5)',
-  },
-  {
-    key: 'Lake',
-    source: require('../images/lake.jpg'),
-    color: 'rgba(53,106,124,0.5)',
-  },
-  {
-    key: 'Ocean',
-    source: require('../images/ocean.jpg'),
-    color: 'rgba(31,110,172,0.5)',
-  },
-  {
-    key: 'City',
-    source: require('../images/city.jpg'),
-    color: 'rgba(164,113,81,0.5)',
-  },
-  {
-    key: 'Coconut Tree',
-    source: require('../images/coconut_tree.jpg'),
-    color: 'rgba(161,151,133,0.6)',
-  },
-  {
-    key: 'Summer',
-    source: require('../images/summer.jpg'),
-    color: 'rgba(162,124,145,0.5)',
-
-  },
-
-  {
-    key: 'Spring',
-    source: require('../images/spring.jpg'),
-    color: 'rgba(135,168,201,0.5)',
-  },
-];
 
 class CardView1 extends PureComponent {
   constructor (props) {
@@ -134,28 +88,32 @@ class CardView1 extends PureComponent {
           />
         </SharedElement>
 
-        <SharedElement
+        {/*<SharedElement
           id={`item.${item.key}.text`}
         >
           <Text style={{
             fontSize: fontScale(30),
-            color: 'rgba(255,255,255,0.9)',
-            fontFamily: Fonts.Bold,
+            color: Colors.primary.dark,
+            fontFamily: Fonts.ExtraBold,
             position: 'absolute',
             bottom: MARGIN_hScale,
             left: MARGIN_wScale,
+            right: 0,
             fontStyle: 'italic',
+            textShadowColor:Colors.primary.white,
+            textShadowOffset:{width: 5, height: 5},
+            textShadowRadius:4,
           }}>
             {item.key}
           </Text>
-        </SharedElement>
+        </SharedElement>*/}
       </Pressable>
     </Animated.View>;
   };
 
   _renderCenter = ({ style, item, index, children, ...props }) => {
     return <View style={[{
-      zIndex: arrayData.length - index,
+      zIndex: DummyDataDateALive.length - index,
     }, style]} {...props}>
       {children}
     </View>;
@@ -164,8 +122,8 @@ class CardView1 extends PureComponent {
   render () {
 
     const backgroundColor = this.animated.interpolate({
-      inputRange: arrayData.map((_, index) => index),
-      outputRange: arrayData.map(item => item.color),
+      inputRange: DummyDataDateALive.map((_, index) => index),
+      outputRange: DummyDataDateALive.map(item => item.color),
     });
 
     return (
@@ -173,7 +131,7 @@ class CardView1 extends PureComponent {
         key={'UP'}
         direction={Directions.UP}
         onHandlerStateChange={ev => {
-          if (ev.nativeEvent.state === State.END && this.state.activeIndex !== arrayData.length - 1) {
+          if (ev.nativeEvent.state === State.END && this.state.activeIndex !== DummyDataDateALive.length - 1) {
             this._setCardActive(this.state.activeIndex + 1);
           }
         }}
@@ -190,9 +148,10 @@ class CardView1 extends PureComponent {
           <View style={styles.container}>
             <Animated.View style={[{ flex: 1, backgroundColor }]}>
               <FlatList
+                keyExtractor={((item, index) => item + index)}
                 scrollEnabled={false}
                 CellRendererComponent={this._renderCenter}
-                data={arrayData}
+                data={DummyDataDateALive}
                 renderItem={this._renderItem}
                 contentContainerStyle={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
               />
