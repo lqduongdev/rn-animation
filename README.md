@@ -2,28 +2,28 @@
 Sample code for some react native animation
 
 ## Card View 2
-<div style="justify-content: center; align-items: center;">
+<div style="justify-content: center; align-items: center; width: 640px">
 <a href=""><img src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
 </div>
 
 ## Tabbar 2
-<div style="justify-content: center; align-items: center;">
+<div style="justify-content: center; align-items: center; width: 640px">
 <a href=""><img src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_2.gif?raw=true" title="Tabbar 2" /></a>
 </div>
 
 ## Tabbar 1
-<div style="justify-content: center; align-items: center;">
+<div style="justify-content: center; align-items: center; width: 640px">
 <a href=""><img src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## Login Screen 1
-<div style="justify-content: center; align-items: center;">
+<div style="justify-content: center; align-items: center; width: 640px">
 <a href=""><img src="https://github.com/lqduongdev/gif-storage/blob/master/login_screen_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 
 ## Card View 1
-<div style="justify-content: center; align-items: center;">
+<div style="justify-content: center; align-items: center; width: 640px">
 <a href=""><img src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
