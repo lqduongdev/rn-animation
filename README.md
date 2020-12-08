@@ -1,6 +1,9 @@
 # React Native Animation 
 Sample code for some react native animation
 
+## Link Testflight App demo
+https://testflight.apple.com/join/ilI20frf 
+
 ## Card View 2
 <div style="justify-content: center; align-items: center;">
 <a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
