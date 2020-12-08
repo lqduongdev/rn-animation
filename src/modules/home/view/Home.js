@@ -3,12 +3,12 @@
  * Created by leduong on 22/11/2020
  */
 
-import React, { PureComponent } from 'react';
-import { FlatList, Pressable, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
-import Header from '../../../components/Header';
-import Colors from '../../../style/Colors';
-import Fonts from '../../../style/Fonts';
-import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions';
+import React, { PureComponent } from 'react'
+import { FlatList, Pressable, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import Header from '../../../components/Header'
+import Colors from '../../../style/Colors'
+import Fonts from '../../../style/Fonts'
+import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions'
 
 const listAnimation = [
   {
@@ -55,7 +55,7 @@ class Home extends PureComponent {
       <View style={styles.container}>
         <StatusBar barStyle={'light-content'}/>
         <SafeAreaView style={{ backgroundColor: Colors.accent.general }}/>
-        <Header title={'Free Time Animation'}
+        <Header title={'React Native Animation'}
                 isColor={true}
                 isLeft={false}
         />
