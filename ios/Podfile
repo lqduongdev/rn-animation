@@ -5,16 +5,19 @@ platform :ios, '10.0'
 
 target 'FreeTimeAnimation' do
   config = use_native_modules!
-
+  
   use_react_native!(:path => config["reactNativePath"])
-
+  
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-
+  
+  
+  pod 'ReactCommon/turbomodule/samples', :path => '../node_modules/react-native/ReactCommon'
+  
   target 'FreeTimeAnimationTests' do
     inherit! :complete
     # Pods for testing
   end
-
+  
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
@@ -27,7 +30,7 @@ end
 
 target 'FreeTimeAnimation-tvOS' do
   # Pods for FreeTimeAnimation-tvOS
-
+  
   target 'FreeTimeAnimation-tvOSTests' do
     inherit! :search_paths
     # Pods for testing

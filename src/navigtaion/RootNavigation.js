@@ -1,15 +1,17 @@
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import { navigationRef } from './refNavigation';
+import {navigationRef} from './refNavigation';
 import Home from '../modules/home/view/Home';
 import Login1 from '../modules/login1/view/Login1';
 import CardView1Detail from '../modules/cardView1/view/CardView1Detail';
-import { createStackNavigator } from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import TabbarStack from './stack/TabbarStack';
 import groupStack from './groupStack';
 import CardStack from './stack/CardStack';
+import ProcessDownload1
+  from '../modules/processDownload1/view/ProcessDownload1';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 export default function RootNavigation () {
 
@@ -23,7 +25,7 @@ export default function RootNavigation () {
       restDisplacementThreshold: 0.01,
       restSpeedThreshold: 0.01,
     },
-  };
+  }
 
   return (
     <NavigationContainer ref={navigationRef}>
@@ -54,7 +56,9 @@ export default function RootNavigation () {
 
         {groupStack(Stack, TabbarStack)}
 
+        <Stack.Screen name="ProcessDownload1" component={ProcessDownload1}/>
+
       </Stack.Navigator>
     </NavigationContainer>
-  );
+  )
 }
