@@ -4,30 +4,37 @@ Sample code for some react native animation
 ## Link Testflight App demo
 https://testflight.apple.com/join/ilI20frf 
 
-## Card View 2
-<div style="justify-content: center; align-items: center;">
-<a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
+## Package used
+```json
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-reanimated": "^2.0.0-rc.0",
+    "react-native-redash": "^16.0.4",
+    "react-native-svg": "^12.1.0",
+    "react-native-vector-icons": "^7.1.0",
+```
+
+## Process Download
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/process_download1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
-## Tabbar 2
-<div style="justify-content: center; align-items: center;">
-<a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_2.gif?raw=true" title="Tabbar 2" /></a>
+## Card View 
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
 </div>
 
-## Tabbar 1
-<div style="justify-content: center; align-items: center;">
-<a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_1.gif?raw=true" title="Login Screen 1" /></a>
+## Tabbar
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_2.gif?raw=true" title="Tabbar 2" /></a>
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
-## Login Screen 1
-<div style="justify-content: center; align-items: center;">
-<a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/login_screen_1.gif?raw=true" title="Login Screen 1" /></a>
-</div>
-
-
-## Card View 1
-<div style="justify-content: center; align-items: center;">
-<a href=""><img width="300px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
+## Login Screen
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/login_screen_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## License
