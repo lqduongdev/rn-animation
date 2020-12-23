@@ -3,14 +3,27 @@
  * Created by leduong on 22/11/2020
  */
 
-import React, { PureComponent } from 'react'
-import { FlatList, Pressable, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
-import Header from '../../../components/Header'
-import Colors from '../../../style/Colors'
-import Fonts from '../../../style/Fonts'
-import { MARGIN_hScale, MARGIN_wScale } from '../../../style/Dimensions'
+import React, {PureComponent} from 'react';
+import {
+  FlatList,
+  Pressable,
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import Header from '../../../components/Header';
+import Colors from '../../../style/Colors';
+import Fonts from '../../../style/Fonts';
+import {MARGIN_hScale, MARGIN_wScale} from '../../../style/Dimensions';
 
 const listAnimation = [
+  {
+    key: 'processDownload1',
+    route: 'ProcessDownload1',
+    title: 'Process Download 1',
+  },
   {
     key: 'cardView2',
     route: 'CardView2',
@@ -36,7 +49,7 @@ const listAnimation = [
     route: 'CardView1',
     title: 'Card View 1',
   },
-];
+]
 
 class Home extends PureComponent {
 
@@ -48,7 +61,7 @@ class Home extends PureComponent {
         {'#' + (index + 1) + '. ' + item.title}
       </Text>
     </Pressable>
-  );
+  )
 
   render () {
     return (
@@ -62,7 +75,7 @@ class Home extends PureComponent {
 
         <FlatList data={listAnimation} renderItem={this._renderItem}/>
       </View>
-    );
+    )
   }
 }
 
@@ -82,6 +95,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     paddingVertical: MARGIN_hScale,
   },
-});
+})
 
-export default Home;
+export default Home
