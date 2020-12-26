@@ -1,6 +1,10 @@
 # React Native Animation 
 Sample code for some react native animation
 
+I hope you can learn a few new things from this project
+
+If that helps, give me a star 😘 😘 😘
+
 ## Link Testflight App demo
 https://testflight.apple.com/join/ilI20frf 
 

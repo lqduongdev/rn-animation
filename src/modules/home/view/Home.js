@@ -20,6 +20,11 @@ import {MARGIN_hScale, MARGIN_wScale} from '../../../style/Dimensions';
 
 const listAnimation = [
   {
+    key: 'cardView3',
+    route: 'CardView3',
+    title: 'Card View 3',
+  },
+  {
     key: 'processDownload1',
     route: 'ProcessDownload1',
     title: 'Process Download 1',
@@ -49,11 +54,10 @@ const listAnimation = [
     route: 'CardView1',
     title: 'Card View 1',
   },
-]
+];
 
 class Home extends PureComponent {
-
-  _renderItem = ({ item, index }) => (
+  _renderItem = ({item, index}) => (
     <Pressable
       onPress={() => this.props.navigation.navigate(item.route)}
       style={styles.wrapper}>
@@ -61,21 +65,22 @@ class Home extends PureComponent {
         {'#' + (index + 1) + '. ' + item.title}
       </Text>
     </Pressable>
-  )
+  );
 
-  render () {
+  render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle={'light-content'}/>
-        <SafeAreaView style={{ backgroundColor: Colors.accent.general }}/>
-        <Header title={'React Native Animation'}
-                isColor={true}
-                isLeft={false}
+        <StatusBar barStyle={'light-content'} />
+        <SafeAreaView style={{backgroundColor: Colors.accent.general}} />
+        <Header
+          title={'React Native Animation'}
+          isColor={true}
+          isLeft={false}
         />
 
-        <FlatList data={listAnimation} renderItem={this._renderItem}/>
+        <FlatList data={listAnimation} renderItem={this._renderItem} />
       </View>
-    )
+    );
   }
 }
 
@@ -95,6 +100,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     paddingVertical: MARGIN_hScale,
   },
-})
+});
 
-export default Home
+export default Home;
