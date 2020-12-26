@@ -21,26 +21,26 @@ https://testflight.apple.com/join/ilI20frf
 
 ## Card View 
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_3.gif?raw=true" title="Card View 1" /></a>
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_3.gif?raw=true" title="Card View 1" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
 </div>
 
 
 ## Process Download
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/process_download1.gif?raw=true" title="Login Screen 1" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/process_download1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## Tabbar
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_2.gif?raw=true" title="Tabbar 2" /></a>
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_1.gif?raw=true" title="Login Screen 1" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_2.gif?raw=true" title="Tabbar 2" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/tabbar_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## Login Screen
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/login_screen_1.gif?raw=true" title="Login Screen 1" /></a>
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/login_screen_1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## License
