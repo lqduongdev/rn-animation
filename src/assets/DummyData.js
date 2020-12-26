@@ -90,124 +90,120 @@ const DummyDataDateALive = [
 
 const DummyCardImage = [
   {
-    key: 'Origami Tobiichi',
-    source: Assets.image.cardImage.cardImage1,
+    key: 'Kurobane Yusa',
+    source: Assets.image.cardImage.cardImage24,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Megurine Luka',
     source: Assets.image.cardImage.cardImage2,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Otosaka Yuu',
     source: Assets.image.cardImage.cardImage3,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Miku Nakano',
     source: Assets.image.cardImage.cardImage4,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Meiko Honma',
+    source: Assets.image.cardImage.cardImage1,
+    color: 'rgba(169,173,179,0.5)',
+  },
+  {
+    key: 'Flandre Scarlet',
     source: Assets.image.cardImage.cardImage5,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Hanamaru Kunikida',
     source: Assets.image.cardImage.cardImage6,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Mizore Shirayuki',
     source: Assets.image.cardImage.cardImage7,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Hiriki',
     source: Assets.image.cardImage.cardImage8,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Chiyo Sakura',
     source: Assets.image.cardImage.cardImage9,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Lala Satalin Deviluke',
     source: Assets.image.cardImage.cardImage10,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Tamako Kitashirakawa',
     source: Assets.image.cardImage.cardImage11,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Rikka Takanashi',
     source: Assets.image.cardImage.cardImage12,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'kirigiri Kyoko',
     source: Assets.image.cardImage.cardImage13,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Kafuu Chino',
     source: Assets.image.cardImage.cardImage14,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Hifumi Takimoto',
     source: Assets.image.cardImage.cardImage15,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Sora',
     source: Assets.image.cardImage.cardImage16,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Houtarou Oreki',
     source: Assets.image.cardImage.cardImage17,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Umaru Doma',
     source: Assets.image.cardImage.cardImage18,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Cocoa Hoto',
     source: Assets.image.cardImage.cardImage19,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Tachibana Kanade',
     source: Assets.image.cardImage.cardImage21,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Mayu',
     source: Assets.image.cardImage.cardImage22,
     color: 'rgba(169,173,179,0.5)',
   },
   {
-    key: 'Origami Tobiichi',
+    key: 'Neptune',
     source: Assets.image.cardImage.cardImage23,
     color: 'rgba(169,173,179,0.5)',
   },
-  {
-    key: 'Origami Tobiichi',
-    source: Assets.image.cardImage.cardImage24,
-    color: 'rgba(169,173,179,0.5)',
-  },
-
 ];
 
-export {
-  DummyDataDateALive,
-  DummyCardImage
-};
+export {DummyDataDateALive, DummyCardImage};
