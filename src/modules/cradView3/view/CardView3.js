@@ -32,7 +32,7 @@ const RenderCenter = ({style, item, index, children, ...props}) => {
   );
 };
 
-const CardView3 = () => {
+const CardView3 = ({navigation}) => {
   const scrollX = useSharedValue(0);
 
   const scrollHandler = useAnimatedScrollHandler((event) => {
@@ -45,6 +45,7 @@ const CardView3 = () => {
       <Header title={'Card View 3'} isColor={true} />
 
       <ListText scrollX={scrollX} />
+
       <AnimatedFlatList
         horizontal={true}
         pagingEnabled={true}
@@ -54,7 +55,12 @@ const CardView3 = () => {
         scrollEventThrottle={16}
         data={DummyCardImage}
         renderItem={({item, index}) => (
-          <RenderItemCard item={item} index={index} scrollX={scrollX} />
+          <RenderItemCard
+            item={item}
+            index={index}
+            scrollX={scrollX}
+            navigation={navigation}
+          />
         )}
         keyExtractor={(item, index) => item.key + index}
         CellRendererComponent={RenderCenter}

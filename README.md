@@ -19,15 +19,16 @@ https://testflight.apple.com/join/ilI20frf
     "react-native-vector-icons": "^7.1.0",
 ```
 
-## Process Download
-<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
-<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/process_download1.gif?raw=true" title="Login Screen 1" /></a>
-</div>
-
 ## Card View 
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
 <a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
 <a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
+</div>
+
+
+## Process Download
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/process_download1.gif?raw=true" title="Login Screen 1" /></a>
 </div>
 
 ## Tabbar
