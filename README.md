@@ -21,6 +21,7 @@ https://testflight.apple.com/join/ilI20frf
 
 ## Card View 
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_3.gif?raw=true" title="Card View 1" /></a>
 <a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_2.gif?raw=true" title="Card View 2" /></a>
 <a href=""><img width="200px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_1.gif?raw=true" title="Card View 1" /></a>
 </div>
