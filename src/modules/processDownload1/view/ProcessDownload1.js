@@ -53,55 +53,61 @@ const ProcessDownload1 = () => {
     setDownload(true);
   });
 
-  return <View style={{
-    flex: 1,
-    backgroundColor: Colors.primary.light,
-  }}>
-    <SafeAreaView style={{backgroundColor: Colors.accent.general}}/>
-    <Header title={'Process Download 1'}
-            isColor={true}
-    />
-
+  return (
     <View
-      style={[
-        {
-          flex: 1,
-        }, ComponentStyles.parentCenter]}>
-      <Animated.View style={downloadAnimationStyle}>
-        <Download timeProcess={TIME}
-                  isDownload={isDownload}
-                  setDownload={setDownload}
-                  cancel={() => {
-                    startAnimation.value = withTiming(0, {
-                      duration: 300,
-                    });
-                  }}
-        />
+      style={{
+        flex: 1,
+        backgroundColor: Colors.primary.light,
+      }}>
+      <SafeAreaView style={{backgroundColor: Colors.accent.general}} />
+      <Header title={'Process Download 1'} isColor={true} />
+
+      <View
+        style={[
+          {
+            flex: 1,
+          },
+          ComponentStyles.parentCenter,
+        ]}>
+        <Animated.View style={downloadAnimationStyle}>
+          <Download
+            timeProcess={TIME}
+            isDownload={isDownload}
+            setDownload={setDownload}
+            cancel={() => {
+              startAnimation.value = withTiming(0, {
+                duration: 300,
+              });
+            }}
+          />
+        </Animated.View>
+      </View>
+
+      <Animated.View style={[{height: BUTTON_HEIGHT * 2}, btnAnimationStyle]}>
+        <Pressable
+          onPress={() => {
+            startAnimation.value = withTiming(
+              1,
+              {
+                duration: 300,
+              },
+              (isFinished) => {
+                if (isFinished) {
+                  runOnJS(start)();
+                }
+              },
+            );
+          }}
+          style={styles.btnActive}>
+          <Text style={[styles.uploadText, {color: '#fff'}]}>
+            Create download
+          </Text>
+        </Pressable>
       </Animated.View>
+
+      <SafeAreaView />
     </View>
-
-    <Animated.View style={[{height: BUTTON_HEIGHT * 2}, btnAnimationStyle]}>
-      <Pressable
-        onPress={() => {
-          startAnimation.value = withTiming(1, {
-            duration: 300,
-          }, isFinished => {
-            if (isFinished) {
-              runOnJS(start)();
-            }
-          });
-
-        }}
-        style={styles.btnActive}>
-        <Text style={[styles.uploadText, {color: '#fff'}]}>
-          Create download
-        </Text>
-      </Pressable>
-    </Animated.View>
-
-
-    <SafeAreaView/>
-  </View>;
+  );
 };
 
 const styles = StyleSheet.create({
@@ -116,7 +122,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blue.general,
     borderRadius: BORDER_RADIUS,
     alignSelf: 'center',
-
   },
 });
 
