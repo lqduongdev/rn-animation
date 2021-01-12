@@ -25,6 +25,11 @@ const listAnimation = [
   //   title: 'Process Download 2',
   // },
   {
+    key: 'listView1',
+    route: 'ListView1',
+    title: 'List View 1',
+  },
+  {
     key: 'cardView3',
     route: 'CardView3',
     title: 'Card View 3',
