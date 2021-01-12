@@ -36,19 +36,23 @@ import Fonts from '../../../style/Fonts';
  * Created by leduong on 21/12/2020
  */
 
-
-const CircleIcon = ({children}) => <View style={[
-  {
-    width: wScale(30),
-    height: wScale(30),
-    borderRadius: wScale(15),
-    backgroundColor: 'rgba(128, 128, 128,0.6)',
-  }, ComponentStyles.parentCenter]}>
-  {children}
-</View>;
+const CircleIcon = ({children}) => (
+  <View
+    style={[
+      {
+        width: wScale(30),
+        height: wScale(30),
+        borderRadius: wScale(15),
+        backgroundColor: 'rgba(128, 128, 128,0.6)',
+      },
+      ComponentStyles.parentCenter,
+    ]}>
+    {children}
+  </View>
+);
 const WIDTH_PROCESS = SCREEN_WIDTH * 0.9;
 
-const Download = ({timeProcess, isDownload, setDownload,cancel}) => {
+const Download = ({timeProcess, isDownload, setDownload, cancel}) => {
   const processing = useValue(0);
 
   const [percentDownload, setPercentDownload] = useState(0);
@@ -59,95 +63,102 @@ const Download = ({timeProcess, isDownload, setDownload,cancel}) => {
 
   useCode(() => {
     return call([processing], (process) => {
-      const percent = Math.round(process / WIDTH_PROCESS * 100);
+      const percent = Math.round((process / WIDTH_PROCESS) * 100);
       setPercentDownload(percent);
     });
   }, [processing]);
 
   // Control download status
-  useCode(() => block([
-    set(
-      downloading,
-      isDownload ? DOWNLOAD_STATUS.PROCESS : DOWNLOAD_STATUS.PAUSED,
-    ),
-  ]), [isDownload]);
+  useCode(
+    () =>
+      block([
+        set(
+          downloading,
+          isDownload ? DOWNLOAD_STATUS.PROCESS : DOWNLOAD_STATUS.PAUSED,
+        ),
+      ]),
+    [isDownload],
+  );
 
   // Control process animation download (PROCESS/PAUSED)
   useCode(
-    () => block([
-      cond(eq(downloading, DOWNLOAD_STATUS.PROCESS), [
-        runTiming(clock, processing, WIDTH_PROCESS, timeProcess),
+    () =>
+      block([
+        cond(eq(downloading, DOWNLOAD_STATUS.PROCESS), [
+          runTiming(clock, processing, WIDTH_PROCESS, timeProcess),
+        ]),
+        cond(eq(downloading, DOWNLOAD_STATUS.PAUSED), [stopClock(clock)]),
+        // cond(eq(processing, WIDTH_PROCESS), set(processing, 0)),
       ]),
-      cond(eq(downloading, DOWNLOAD_STATUS.PAUSED), [
-        stopClock(clock),
-      ]),
-      // cond(eq(processing, WIDTH_PROCESS), set(processing, 0)),
-    ]),
     [],
   );
 
-  return <View style={styles.container}>
-    <View style={styles.lineWrapper}>
-      <Line transformProcess={transformProcess}/>
-    </View>
-
-    <Animated.View style={[
-      styles.processBg, {
-        transform: [{translateX: processing}],
-      }]}/>
-
-    <View style={styles.processWrapper}>
-
-      <View>
-        <Text style={styles.uploadText}>
-          Uploading 3 files
-        </Text>
-
-        <Text style={styles.percentText}>
-          {`${percentDownload}% • ${(timeProcess *
-            (1 - percentDownload / 100) / 1000).toFixed(0)} seconds left`}
-        </Text>
-
+  return (
+    <View style={styles.container}>
+      <View style={styles.lineWrapper}>
+        <Line transformProcess={transformProcess} />
       </View>
 
-      <View/>
-
-      <Pressable onPress={() => {
-        transformProcess.value = withTiming(
-          isDownload ? 1 : 0,
+      <Animated.View
+        style={[
+          styles.processBg,
           {
-            duration: 500,
+            transform: [{translateX: processing}],
           },
-        );
-        if (isDownload) {
-          setDownload(false);
-        } else {
-          setDownload(true);
-        }
-      }}>
-        <CircleIcon>
-          <Ionicons name={isDownload?'pause':'play'} size={wScale(17)} color={'#fff'}/>
-        </CircleIcon>
-      </Pressable>
+        ]}
+      />
 
-      <Pressable onPress={() => {
-        downloading.setValue(DOWNLOAD_STATUS.PAUSED);
-        processing.setValue(0);
-        setDownload(false)
-        cancel()
-      }}>
-        <CircleIcon>
-          <Fontisto name={'close-a'} size={wScale(12)} color={'#fff'}/>
-        </CircleIcon>
-      </Pressable>
+      <View style={styles.processWrapper}>
+        <View>
+          <Text style={styles.uploadText}>Uploading 3 files</Text>
 
-      {/*<AntDesign name={'arrowsalt'} size={wScale(20)}*/}
-      {/*           color={Colors.primary.light}/>*/}
+          <Text style={styles.percentText}>
+            {`${percentDownload}% • ${(
+              (timeProcess * (1 - percentDownload / 100)) /
+              1000
+            ).toFixed(0)} seconds left`}
+          </Text>
+        </View>
+
+        <View />
+
+        <Pressable
+          onPress={() => {
+            transformProcess.value = withTiming(isDownload ? 1 : 0, {
+              duration: 500,
+            });
+            if (isDownload) {
+              setDownload(false);
+            } else {
+              setDownload(true);
+            }
+          }}>
+          <CircleIcon>
+            <Ionicons
+              name={isDownload ? 'pause' : 'play'}
+              size={wScale(17)}
+              color={'#fff'}
+            />
+          </CircleIcon>
+        </Pressable>
+
+        <Pressable
+          onPress={() => {
+            downloading.setValue(DOWNLOAD_STATUS.PAUSED);
+            processing.setValue(0);
+            setDownload(false);
+            cancel();
+          }}>
+          <CircleIcon>
+            <Fontisto name={'close-a'} size={wScale(12)} color={'#fff'} />
+          </CircleIcon>
+        </Pressable>
+
+        {/*<AntDesign name={'arrowsalt'} size={wScale(20)}*/}
+        {/*           color={Colors.primary.light}/>*/}
+      </View>
     </View>
-
-
-  </View>;
-
+  );
 };
 
 const styles = StyleSheet.create({
@@ -187,7 +198,8 @@ const styles = StyleSheet.create({
     transform: [
       {
         rotate: '180deg',
-      }],
+      },
+    ],
     position: 'absolute',
     top: 80,
     bottom: 0,
@@ -201,7 +213,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blue.general,
     borderRadius: BORDER_RADIUS,
     alignSelf: 'center',
-
   },
 });
 

@@ -19,6 +19,16 @@ import Fonts from '../../../style/Fonts';
 import {MARGIN_hScale, MARGIN_wScale} from '../../../style/Dimensions';
 
 const listAnimation = [
+  // {
+  //   key: 'processDownload2',
+  //   route: 'ProcessDownload2',
+  //   title: 'Process Download 2',
+  // },
+  {
+    key: 'listView1',
+    route: 'ListView1',
+    title: 'List View 1',
+  },
   {
     key: 'cardView3',
     route: 'CardView3',

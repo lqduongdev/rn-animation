@@ -11,6 +11,8 @@ import CardStack from './stack/CardStack';
 import ProcessDownload1 from '../modules/processDownload1/view/ProcessDownload1';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import CardView3Detail from '../modules/cradView3/view/CardView3Detial';
+import ProcessDownload2 from '../modules/processDownload2/view/ProcessDownload2';
+import ListView1 from '../modules/listView1/view/ListView1';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -58,7 +60,10 @@ export default function RootNavigation() {
 
         {groupStack(Stack, TabbarStack)}
 
+        <Stack.Screen name="ListView1" component={ListView1} />
+
         <Stack.Screen name="ProcessDownload1" component={ProcessDownload1} />
+        <Stack.Screen name="ProcessDownload2" component={ProcessDownload2} />
       </Stack.Navigator>
     </NavigationContainer>
   );
