@@ -19,6 +19,12 @@ https://testflight.apple.com/join/ilI20frf
     "react-native-vector-icons": "^7.1.0",
 ```
 
+
+## Parallax View
+<div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
+<a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/list_view_1.gif?raw=true" title="Parallax View" /></a>
+</div>
+
 ## Card View 
 <div style="justify-content: space-evenly; align-items: stretch; overflow: scroll; display: flex;">
 <a style="margin-left: 30px; margin-right: 30px" href=""><img width="230px" src="https://github.com/lqduongdev/gif-storage/blob/master/card_view_3.gif?raw=true" title="Card View 1" /></a>
